@@ -1,0 +1,285 @@
+<!doctype html>
+
+<!-- Written by Emily Cannon; please give credit if you use -->
+
+<html lang="en" data-bs-theme="auto">
+<head>
+<script src="../assets/js/color-modes.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.122.0">
+<title>About</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<!-- Bootstrap core CSS -->
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- My stylesheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	
+<!-- Font Awesome  for Icons --> 
+<script src="https://kit.fontawesome.com/f2ec774ed1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<main>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top border-bottom border-secondary">
+    <div class="container-fluid"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-text"><img src="images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="Logo of a letter 'e' with integrated circuit patterns on a teal background."> EC</span>
+      </a>
+      
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navigation Links on the right side -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="about.html"><i class="fa-solid fa-compass"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-folder"></i> Portfolio </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item "><a class="dropdown-item text-dark font-weight-bold nav-link" href="web_projects.html"><i class="fa-solid fa-code"></i> Web Design Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="design_projects.html"><i class="fa-solid fa-palette"></i> Graphic Design
+                Project</a></li>
+              <hr class="dropdown-divider text-dark font-weight-bold">
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="media.html"><i class="fa-solid fa-photo-film"></i> Media: Example Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="proposal.html"><i class="fa-solid fa-file-lines"></i> Original Website
+                Proposal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- 
+Week 5: Assignment - Create a Responsive Services Page 4/14/24
+Description/explantion of my work: 
+I created the Skills page using the CSS Grid property, display: grid, to create a grid of skill sets. I opted for CSS Grid instead of Flexbox because I discovered that Flexbox is better suited for a single column or row, and using it to create a grid would require more code and complexity. To better understand the CSS Grid property, I watched some YouTube tutorials at https://www.youtube.com/watch?v=rg7Fvvl3taU and https://www.youtube.com/watch?v=sKFW3wek21Q.
+
+To add styling, I added classes to the HTML elements of <section>, <article>, <h2>, <h3>, <figure>, <img>, <figcaption>, and <ul>. This made it easy to style just those elements on the Skills page. I used basic text/font styling for headings and adjusted the font size for the figure captions and the main content.
+
+To set up the grid, I used the grid container (the .skills-container selector) and added the justify-content, justify-items, align-content, and margin properties. I also added essential padding, a border-radius, and a box shadow for the individual cards. Additionally, I ensured the design was responsive by customizing media queries, with breakpoints for widescreens, medium, and small screens. For each selector property, I changed the property values for each of these queries accordingly. For example, I changed/added the property values for the skills-container selector for the grid-template-columns, grid-auto-rows, gap, and padding properties. I also changed/added property values for the skills-card selector for the background color, border, and max-width properties. Finally, I changed the property values for the skills-heading3 and skills-content selectors for the font-size property.
+-->
+  
+  <div class="about-container">
+    <h1>About</h1>
+    <div class="bio">
+      <h2>Bio:</h2>
+      <p> Hi there! As you may have noticed from my homepage, I go by the name Em and am currently pursuing a
+        career
+        in the fascinating web design and development field. When I'm not busy with my studies, I love to spend
+        time
+        outdoors - walking my furry companion, hiking, fly fishing, skiing, and occasionally, I venture out on
+        backpacking trips. In addition to my outdoor adventures, I also enjoy crocheting during my free time. I
+        find
+        it to be a relaxing and creative outlet that allows me to unwind and express my artistic side. But it's
+        not
+        all about me - I also have a passion for giving back to my community. That's why I volunteer at local
+        food
+        pantries and food banks to help those in need.
+        Additionally, I take pride in my commitment to continuous learning, and I find great joy in acquiring
+        new
+        skills, particularly in the domain of programming languages that I have yet to explore. My most recent
+        pursuit of knowledge has been centered around artificial intelligence and its impact on the tech
+        industry,
+        both positively and negatively. I also have been diving into other computer science topics such as
+        algorithms and computational thinking, object-oriented programming (OOP), functional programming, and
+        boolean logic, among other things. </p>
+      <br>
+    </div>
+    <div> <br>
+      <h2 class="skills-heading2">Skills:</h2>
+      <section class="skills-container"> 
+        <!-- Skill Set 1 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Hard Skills <i class="fa-solid fa-screwdriver-wrench fa-sm"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/hard_skills.jpg"
+							alt="Image of a computer surrounded by a pencil, paper, magnifying glass, code, wheels, clock, and umbrella, illustrating a variety of elements"
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> izabelita. (n.d.). Programming and coding, scripting and website development, analytics
+              trendy
+              amoeba style concepts [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/273323174">https://stock.adobe.com/273323174.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li>Computer Software Knowledge</li>
+            <li>Computer Programming</li>
+            <li>Operating Systems</li>
+            <li>Graphic Design</li>
+            <li>Web Design/Development</li>
+            <li>Typography</li>
+            <li>Photo Editing/Editing Software</li>
+            <li>Microsoft Office Suite and G-Suite</li>
+            <li>Academic Writing/Professional Writing</li>
+            <li>Customer Service/Guest Services</li>
+            <li>Sales/Money Management</li>
+            <li>Volunteer Engagement</li>
+            <li>Community Service/Volunteering</li>
+          </ul>
+        </article>
+        
+        <!-- Skill Set 2 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Graphic Design Skills <i class="fa-solid fa-compass-drafting fa-sm"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/graphic_design_skills.jpg"
+							alt="Visual representation of graphic design tools through abstract drawings in a creative composition."
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> inspiring.team. (n.d.). Graphic design concept [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/215665224">https://stock.adobe.com/215665224.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Lightroom</li>
+            <li>Adobe Bridge</li>
+          </ul>
+        </article>
+        
+        <!-- Skill Set 3 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Web Design/Dev Skills <i class="fa-solid fa-laptop-code"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/web_skills.jpg"
+							alt="Visual graphic representation of a cluster of icons surrounding the word 'code' to symbolize the diverse range of tools and symbols in web development."
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> izabelita. (n.d.). Programming and coding, scripting and website development, analytics
+              trendy
+              amoeba style concepts [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/273323174">https://stock.adobe.com/273323174.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Dreamweaver</li>
+          </ul>
+        </article>
+        
+        <!-- Skill Set 4 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Programming Skills <i class="fa-solid fa-code-branch fa-sm"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/programming_skills.jpg"
+							alt="Graphic depicting a collection of programming tools and a laptop with coding software open, representing the coding environment."
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> izabelita. (n.d.). Programming and coding, scripting and website development, analytics
+              trendy
+              amoeba style concepts [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/273323174">https://stock.adobe.com/273323174.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Bash</li>
+            <li>Powershell</li>
+            <li>Visual Studio Code</li>
+            <li>PyCharm</li>
+          </ul>
+        </article>
+        
+        <!-- Skill Set 5 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Software/Technical Skills <i class="fa-solid fa-gears"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/software_tech_skills.jpg"
+							alt="Graphic of a computer monitor featuring icons denoting digital communication tools like email, networks, and data analytics charts."
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> panji. (n.d.). computer with network [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/385883253">https://stock.adobe.com/385883253.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li> MS Office:
+              <ul>
+                <li>Word</li>
+                <li>PowerPoint</li>
+                <li>Teams</li>
+              </ul>
+            </li>
+            <li> Google Drive and G-Suite:
+              <ul>
+                <li>Docs</li>
+                <li>Slides</li>
+                <li>Gmail</li>
+                <li>Google Calendar</li>
+                <li>Google Chat</li>
+              </ul>
+            </li>
+            <li> Other:
+              <ul>
+                <li>Adobe Acrobat</li>
+                <li>Grammarly</li>
+                <li>Windows OS</li>
+                <li>Linux OS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        
+        <!-- Skill Set 6 -->
+        <article class="skills-card">
+          <h3 class="skills-heading3">Soft Skills <i class="fa-solid fa-handshake"></i></h3>
+          <figure class="skills-figure"> <img src="images/skills_imgs/soft_skills.jpg"
+							alt="Graphic showcasing soft skills like communication, teamwork, creativity, and leadership using icons on a vibrant yellow background."
+							class="skills-imgs">
+            <figcaption class="skills-figcap skills-content"> bsd studio. (n.d.). Soft skills word concepts banner [Online Image]. Adobe Stock. <a href="https://stock.adobe.com/273136172">https://stock.adobe.com/273136172.</a> </figcaption>
+          </figure>
+          <ul class="skills-content">
+            <li>Critical Thinking</li>
+            <li>Problem Solving</li>
+            <li>Creativity</li>
+            <li>Open-Mindedness</li>
+            <li>Dependibility</li>
+            <li>Self-Direction</li>
+            <li>Strong Work Ethic</li>
+            <li>Growth Mind Set/Willingness to Learn</li>
+            <li>Cooperation</li>
+            <li>Attention to Detail</li>
+            <li>Perserverance</li>
+            <li>Persistence</li>
+            <li>Results-Oriented</li>
+            <li>Motivated</li>
+            <li>Empathetic</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </div>
+</main>
+<!-- /.container --> 
+
+<script>
+	const portfolioLink = document.getElementById("navbarDropdown");
+	let isMenuOpen = false;
+	
+	portfolioLink.addEventListener("click", function() {
+		if (!isMenuOpen) {
+			this.innerHTML = '<i class="fa-solid fa-folder-open"></i> Portfolio'; // Change to new icon
+		} else {
+			this.innerHTML = '<i class="fa-solid fa-folder"></i> Portfolio'; // Change back to original icon
+		}
+		isMenuOpen = !isMenuOpen
+	});
+</script> 
+
+<!-- Bootstrap core JavaScript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

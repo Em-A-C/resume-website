@@ -1,0 +1,535 @@
+<!doctype html>
+
+<!-- Written by Emily Cannon; please give credit if you use -->
+
+<html lang="en" data-bs-theme="auto">
+<head>
+<script src="../assets/js/color-modes.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.122.0">
+<title>Graphic Design Projects</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<!-- Bootstrap core CSS -->
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="breadcrumbs.css" rel="stylesheet">
+
+<!-- My stylesheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+<!-- Font Awesome  for Icons --> 
+<script src="https://kit.fontawesome.com/f2ec774ed1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<main>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top border-bottom border-secondary">
+    <div class="container-fluid"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html"> <span class="logo-text"><img src="images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="Logo of a letter 'e' with integrated circuit patterns on a teal background."> EC</span> </a> 
+      
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navigation Links on the right side -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="about.html"><i class="fa-solid fa-compass"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-folder"></i> Portfolio </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item "><a class="dropdown-item text-dark font-weight-bold nav-link" href="web_projects.html"><i class="fa-solid fa-code"></i> Web Design Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="design_projects.html"><i class="fa-solid fa-palette"></i> Graphic Design
+                Project</a></li>
+              <hr class="dropdown-divider text-dark font-weight-bold">
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="media.html"><i class="fa-solid fa-photo-film"></i> Media: Example Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="proposal.html"><i class="fa-solid fa-file-lines"></i> Original Website
+                Proposal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- BREADCRUMB -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="house-door-fill" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+    </symbol>
+  </svg>
+  <div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+        <li class="breadcrumb-item"> <a class="link-body-emphasis" href="index.html">
+          <svg class="bi" width="16" height="16">
+            <use xlink:href="#house-door-fill"></use>
+          </svg>
+          <span class="visually-hidden">Home</span> </a> </li>
+        <li class="breadcrumb-item link-body-emphasis fw-semibold text-decoration-none"> Portfolio </li>
+        <li class="breadcrumb-item active" aria-current="page"> Graphic Design Projects </li>
+      </ol>
+    </nav>
+  </div>
+  <section class="text-center container border-bottom border-secondary d-flex justify-content-evenly align-content-center">
+    <div class="col-md-8 mx-auto web-container">
+      <h1 class="web-project-title fw-light d-flex d-flex justify-content-evenly align-content-center"><strong>Graphic Design Projects</strong></h1>
+      <p class="lead text-body d-flex justify-content-evenly align-content-center"> The following projects include an assortment of creative
+        endeavors I undertook during my high school years and a few projects that I completed recently
+        as part of a "Design Digital Images for the Web" course. Together, they showcase my varied
+        skills and interests in design and digital art.</p>
+    </div>
+  </section>
+	
+  <div class="flip-container">
+    <div class="row d-flex justify-content-evenly align-content-center"> 
+      <!-- Creative Composite -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col1">
+        <div class="flip-card1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/my own image.jpg" alt="Silhouette of a howling wolf against a full moon with a backdrop of snow-covered trees under a purple sky." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Creative Composite</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">During high school, I remember spending hours tinkering
+                    with Adobe Photoshop, trying to create something unique and visually
+                    appealing. During one of these sessions, I stumbled upon a
+                    design that holds a special place in my heart. Although imperfect and
+                    lacking intricate details, it signifies the moment I discovered my love
+                    for graphic design.</p> 
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fox in Snow -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col1">
+        <div class="flip-card1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/fox in the snow.jpg" alt="A fox in a snowy landscape with trees and a full moon in the background." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Fox in Snow</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">I began my journey of experimentation with Adobe
+                    Photoshop tools, and while the outcome wasn't perfect, it marked a
+                    significant
+                    turning point in my artistic pursuits. This experience ignited a desire to
+                    learn
+                    more techniques and explore the limitless possibilities that digital art
+                    has to offer</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Colorful Tessellation -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col1">
+        <div class="flip-card1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/tessellation.jpg" alt="Colorful pattern of interlocking bears in a range of gradient hues including purple, red, green, and blue." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Colorful Tessellation</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">In this particular image, I decided to delve deeper
+                    into the world of Adobe Photoshop and explore some of the more advanced
+                    tools
+                    and techniques available. During this project, I had a breakthrough moment
+                    and learned how to effectively utilize the pen tool, which has proven to be
+                    an invaluable asset in my design work. </p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <div class="flip-container">
+    <div class="row d-flex justify-content-evenly align-content-center"> 
+      <!-- Children's Book Cover Design -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col2">
+        <div class="flip-card2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/Childrens Book Cover.jpg" alt="Mock book cover of 'the burrowing owl and the buffalo' featuring an image of an burrowing owl sitting atop a buffalo in a prairie landscape, with text describing a prairie adventure." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Children's Book Cover Design</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">In a graphic design class during my high school days,
+                    we were assigned a project that involved designing/redesigning book covers
+                    of various genres. The challenge was to create a classic, non-fiction, and
+                    children's book cover, each with a unique design that would capture the
+                    genre's essence. The image I'm sharing is an original design for
+                    a children's book cover.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Classic Book Cover Redesign -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col2">
+        <div class="flip-card2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/Classic Book Cover.jpg" alt="Redesign of a book cover for the book of 'charlotte's web' by e.b. white, featuring a spider web with the title and an illustration of a girl holding a pig." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Classic Book Cover Redesign</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">This is the second of the three images I mentioned
+                    previously; it is my redesign of a classic book cover. </p>
+				  <i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Non-Fiction Book Cover Design -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col2">
+        <div class="flip-card2">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/nonfictionbookcover.jpg" alt="Mock book cover titled 'fly fishing in the gunnison valley' by r.c. paparas, featuring images of a fishing rod and a trout underwater, with logos of colorado trout unlimited." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Non-Fiction Book Cover Design</h5>
+                  <p class="hover" style="font-size:15px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">About:</h5>
+                  <p class="card-text" style="font-size:15px">This is the third and final image out of the set of
+                    three; it is an original non-fiction book cover design.</p>
+				  <i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <div class="flip-container">
+    <div class="row d-flex justify-content-evenly align-content-center"> 
+      <!-- Mock Home Page for JH Gifts (made-up company) -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col3">
+        <div class="flip-card3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/homepage.jpg" alt="Website screenshot of 'jh gifts,' featuring a promotional banner for a 20% off tea sale, images of products including a teapot and decorative items, and website navigation links." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mock Home Page for JH Gifts (fictitious company):</h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">The following images are some of my most recent works.
+                    They were part of a project from my "Designing Digital Images for the Web"
+                    course. In particular, this image is a mock home page that I designed
+                    using Adobe Photoshop for a fictitious company called JH Gifts. I carefully
+                    crafted this design to showcase the company's products and services in
+                    an engaging and visually appealing way.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mock Catalog Page for JH Gifts (made-up company) -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col3">
+        <div class="flip-card3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/catalogpage.jpg" alt="Screenshot of an online store's catalog page featuring a variety of products such as teapots, decorations, and candles with prices and links to more items." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mock Catalog Page for JH Gifts (fictitious company): </h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">The provided image represents a fictitious catalog page
+                    designed to complement the mock home page. The page was created using
+                    Adobe Photoshop software and is intended for use by the hypothetical JH
+                    Gifts
+                    company.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mock Single Product Page for JH Gifts (made-up company) -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col3">
+        <div class="flip-card3">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/singleproductpage.jpg" alt="An online store page showing a chinese tea ceremony set for sale, with a teapot and four cups displayed on a wooden table. the price and product details are visible." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mock Single Product Page for JH Gifts (fictitious
+                    company) </h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">This image depicts a simulated single product page
+                    designed to complement a fabricated home page and catalog page using Adobe
+                    Photoshop software for the fictitious company JH Gifts.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <div class="flip-container">
+    <div class="row d-flex justify-content-evenly align-content-center"> 
+      <!-- Futurism Mock Advertisement -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col4">
+        <div class="flip-card4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/futurism.jpg" alt="A vibrant digital collage featuring a cityscape overlaid with neon diagrams of brain waves and the words 'thought recognition artificial &amp; human intelligence.'" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Futurism Mock Advertisement</h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch align-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">This image is a relic of some of my older work. Like
+                    the others, it was also created in Adobe Photoshop. It is a mock futuristic
+                    advertisement for a "thought recognition" subscription.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contrast Flower -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col4">
+        <div class="flip-card4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/flower.jpg" alt="A digitally altered image of a flower with vibrant blue petals and grayscale leaves." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Contrast Flower</h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">The following piece of work is from my earlier days of
+                    learning how to use Photoshop. It's a basic image that utilizes contrast
+                    and filters to highlight the beauty of a flower. The use of contrast helps
+                    to bring the flower into the foreground, making it the centerpiece of the
+                    image. Despite being an earlier work, it's an excellent example of the power of basic
+                    editing techniques when applied effectively.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Symmetrical Flower Pattern -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col4">
+        <div class="flip-card4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/symmetricalflower.jpg" alt="A symmetrical pattern created from the mirrored image of a vibrant yellow and red sunflower." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Symmetrical Flower Pattern</h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-center">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">For a past practice project, I utilized the
+                    kaleidoscope effect in Adobe Photoshop to create a visually striking design.
+                    The
+                    resulting image is a mesmerizing blend of intricate patterns and vibrant
+                    colors, all seamlessly integrated to produce an eye-catching piece of
+                    digital artwork.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <div class="flip-container design-container">
+    <div class="row d-flex justify-content-evenly align-content-center"> 
+      <!-- Adobe Illustrator Mushrooms -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col5">
+        <div class="flip-card5">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"> <img src="images/graphic_design_imgs/mushrooms2.JPG" alt="Illustration of several stylized red mushrooms with white spots on a simple green landscape." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Adobe Illustrator Mushrooms</h5>
+                  <p class="hover">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-around">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">I created this piece as part of a practice project for
+                    my Adobe Illustrator class, which helped me hone my skills in using the
+                    software.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mock Advertisement for Desert Sunrise -->
+      <div class="col-md-4 d-flex align-items-stretch themed-grid-col5">
+        <div class="flip-card5">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card"><img src="images/graphic_design_imgs/em.cannon.w3.casestudy.jpg" alt="Promotional poster for desert sunrise plant nursery featuring butterflies ascending from a cluster of native plants, set against a background of clouds and a sunrise gradient." class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title" style="font-size:18px">Mock Advertisment for Desert Sunrise</h5>
+                  <p class="hover" style="font-size:12px">Hover over to learn more about project!</p> <i class="fa-solid fa-rotate-right fa-xs"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back d-flex align-items-stretch justify-content-around">
+              <div class="card">
+                <div class="card-body text-center">
+                  <h5 class="card-title">About:</h5>
+                  <p class="card-text">In my course on "Designing Digital Images for the Web,"
+                    I got the chance to create a mock advertisement for a fictional company
+                    called Desert Sunrise Plant Nursery. The project aimed to design an
+                    attractive
+                    digital image for advertising online.</p>
+					<i class="fa-solid fa-rotate-left fa-xs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+	const portfolioLink = document.getElementById("navbarDropdown");
+	let isMenuOpen = false;
+	
+	portfolioLink.addEventListener("click", function() {
+		if (!isMenuOpen) {
+			this.innerHTML = '<i class="fa-solid fa-folder-open"></i> Portfolio'; // Change to new icon
+		} else {
+			this.innerHTML = '<i class="fa-solid fa-folder"></i> Portfolio'; // Change back to original icon
+		}
+		isMenuOpen = !isMenuOpen
+	});
+</script> 
+<!-- Bootstrap core JavaScript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

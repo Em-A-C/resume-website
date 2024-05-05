@@ -1,0 +1,279 @@
+<!doctype html>
+
+<!-- Written by Emily Cannon; please give credit if you use -->
+
+<html lang="en" data-bs-theme="auto">
+<head>
+<script src="../assets/js/color-modes.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.122.0">
+<title>Original Website Proposal</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<!-- Bootstrap core CSS -->
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="breadcrumbs.css" rel="stylesheet">
+
+<!-- My stylesheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+<!-- Font Awesome  for Icons --> 
+<script src="https://kit.fontawesome.com/f2ec774ed1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<main>
+ <nav class="navbar navbar-expand-md navbar-light fixed-top border-bottom border-secondary">
+    <div class="container-fluid"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-text"><img src="images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="Logo of a letter 'e' with integrated circuit patterns on a teal background."> EC</span>
+      </a>
+      
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navigation Links on the right side -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="about.html"><i class="fa-solid fa-compass"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-folder"></i> Portfolio </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item "><a class="dropdown-item text-dark font-weight-bold nav-link" href="web_projects.html"><i class="fa-solid fa-code"></i> Web Design Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="design_projects.html"><i class="fa-solid fa-palette"></i> Graphic Design
+                Project</a></li>
+              <hr class="dropdown-divider text-dark font-weight-bold">
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="media.html"><i class="fa-solid fa-photo-film"></i> Media: Example Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="proposal.html"><i class="fa-solid fa-file-lines"></i> Original Website
+                Proposal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- BREADCRUMB -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="house-door-fill" viewBox="0 0 16 16">
+      <path
+          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+    </symbol>
+  </svg>
+  <div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+        <li class="breadcrumb-item"> <a class="link-body-emphasis" href="index.html">
+          <svg class="bi" width="16" height="16">
+            <use xlink:href="#house-door-fill"></use>
+          </svg>
+          <span class="visually-hidden">Home</span> </a> </li>
+        <li class="breadcrumb-item link-body-emphasis fw-semibold text-decoration-none"> Portfolio </li>
+        <li class="breadcrumb-item active" aria-current="page"> Original Website Proposal </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="proposal">
+      <h1>Website Proposal:</h1>
+      
+      <!-- Purpose and Goals -->
+      <h2>Purpose and Goals</h2>
+      <p> My purpose in building a resume website is to have a reliable and effective tool that showcases my
+        skills, abilities, and achievements to potential employers, clients, and other professionals. By
+        presenting my resume/portfolio in a website format, I can demonstrate my skills and abilities in a more
+        comprehensive way, which can help me stand out from the competition and gain more opportunities. My hope
+        for my live URL is https://www.emilycannon.com. </p>
+      <br>
+      
+      <!-- Target Audience -->
+      <h2>Target Audience</h2>
+      <p> As a future web developer, I envision my resume website as a platform to exhibit my skills and expertise
+        to potential future employers and clients. I aim to create a website that is professional and polished
+        and highlights my current projects and achievements in a clear and concise manner, with room to share
+        future projects and experiences. I would be sharing my website's URL with future potential employers,
+        which I hope will provide them with a better understanding of my qualifications and expertise.
+        Additionally, I would want to share my URL with fellow professionals in the web development field in the
+        future for networking opportunities or potential collaborations on projects. </p>
+      <br>
+      
+      <!-- Competitor Analysis with Examples -->
+      <h2>Competitor Analysis with Examples</h2>
+      <p> Many people create and use resume websites for a variety of careers. However, in order to stand out
+        from the sea of other resume websites, I'll have to make my resume site unique to myself and have my
+        projects easily accessible in an aesthetic format. The site will need to be easily navigated with
+        the important information presented in an appealing fashion, where it will possibly catch someone's
+        interest or attention quickly. </p>
+      <div>
+        <ul>
+          <!-- Resume Website Examples 1 -->
+          <li> <a href="https://www.wixfresh.com/post/resume-websites" target="_blank"> https://www.wixfresh.com/post/resume-websites </a>: this website lists resume website examples for inspiration (I will list my favorites
+            below).
+            <ul>
+              <!-- List item 1 -->
+              <li> <a href="https://www.hi-im-julian.com/" target="_blank"> https://www.hi-im-julian.com/ </a>: I like the creative and humorous layout of the home page. </li>
+              
+              <!-- List item 2 -->
+              <li> <a href="https://www.ximenavengoechea.com/bio" target="_blank"> https://www.ximenavengoechea.com/bio </a>: I like the simplicity of the navigation, and the design is perfectly balanced;
+                it's not too busy, but it's not void of personality either. </li>
+              
+              <!-- List item 3 -->
+              <li> <a href="https://www.pascalvangemert.nl/" target="_blank"> https://www.pascalvangemert.nl/ </a>: I like the timeline that is presented on this webpage of this person's skills and
+                experiences. </li>
+              
+              <!-- List item 4 -->
+              <li> <a href="https://www.joshuamccartney.com/" target="_blank"> https://www.joshuamccartney.com/ </a>: I like the tile layout of the projects on this website. </li>
+              
+              <!-- List item 5 -->
+              <li> <a href="https://www.kiran.fyi/" target="_blank"> https://www.kiran.fyi/ </a>": This one has a similar tile layout to the last one, but it seems smoother and
+                more balanced. </li>
+            </ul>
+          </li>
+          
+          <!-- Resume Website Examples 2 -->
+          <li> <a href="https://www.sitebuilderreport.com/inspiration/resume-websites" target="_blank"> https://www.sitebuilderreport.com/inspiration/resume-websites </a>: another website that lists resume website examples (I will list my favorites below).
+            <ul>
+              <!-- List item 1 -->
+              <li> <a href="https://www.thomasgrangeon.com/" target="_blank"> https://www.thomasgrangeon.com/ </a>: I like the idea of linking my LinkedIn with a button on the home page that says
+                “Resume,” similar to how this person did so on their website. </li>
+              
+              <!-- List item 2 -->
+              <li> <a href="https://maddieharris.org/#skills" target="_blank"> https://maddieharris.org/#skills </a>: I like the “Skills” section that showcases a list of skills this person has. </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <br>
+      
+      <!-- Content Strategy -->
+      <h2>Content Strategy</h2>
+      <p> The visual content for my resume website will mainly consist of images and links to my own projects, and
+        I'll strive to use images that are high-quality and visually appealing that show my best work. These
+        images may be graphic design projects I have done or screenshots from webpages I have built; if I
+        showcase some of the small webpages I have built, I will include links to them as well. Also, if I end
+        up using any GIFs or images from the web, I'll always cite them to give proper credit. </p>
+      <br>
+      
+      <!-- Navigation -->
+      <h2>Navigation</h2>
+      <p> My resume website will contain about five different web pages: the home page, the about page, the
+        graphic design project page and the web projects page under "Portfolio", and the contact page. The most
+        important information for the viewer, if, for example, they are a potential employer, would be the
+        About page, where they could see my experiences, education, etc., and for a potential client, the
+        portfolio page would be most important because they could see my past work and decide whether they would
+        want to work with me. <br>
+        The hierarchy of my website is as follows: </p>
+      <div>
+        <ul>
+          <!-- Home Page -->
+          <li> Home Page:
+            <ul>
+              <li> Introduce myself and the purpose of the webpage, and include a “Resume” button under the
+                text that opens my LinkedIn page in a new tab. </li>
+            </ul>
+          </li>
+          
+          <!-- About -->
+          <li> About:
+            <ul>
+              <li> Bio: This page will provide more in-depth information (than the home page) about who I
+                am and what I do. I may also share my education and experiences (or leave that space for
+                that information in the future). I may also include a "Skills" section on this page with
+                a list of my existing skills. </li>
+            </ul>
+          </li>
+          
+          <!-- Portfolio -->
+          <li> Portfolio:
+            <ul>
+              <!-- List item 1 -->
+              <li> Graphic design projects: I would like to showcase my graphic design projects via a tile
+                layout and possibly create each tile where they 'flip over' with a simple cursor hover
+                trigger to show a quick description of said projects. </li>
+              
+              <!-- List item 2 -->
+              <li> Web projects: showcase a few of my web projects via links and screenshots and possibly
+                include a small description of each project via a dropdown feature. </li>
+            </ul>
+          </li>
+          
+          <!-- Contact -->
+          <li> Contact:
+            <ul>
+              <li> I'd like to create a simple contact form with text input boxes for viewers to type in
+                their name, email, and/or phone number and the message they want to send. I may also
+                possibly include another link to my LinkedIn as a second line of contact, where the
+                viewer of my website could message me there instead. </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <br>
+      
+      <!-- Font Families -->
+      <h2>Font Families</h2>
+      <p> I have chosen Rokkitt for the headings and Roboto for the body of my website. I decided to go for a
+        sans-serif font like Roboto for the body as it makes the content more readable. On the other hand, I
+        also chose Rokkitt because it is a serif font that creates a nice contrast between the headings and the
+        body, making the content more interesting for the viewer. To create some contrast between the level one
+        and level two headings, I decided to italicize the level two headings in the same Rokkitt font as the
+        level one headings Overall, the combination of these two fonts creates contrast and interest in the
+        content while also maintaining good readability. Additionally, I chose these two fonts because Roboto
+        was trending on Google Fonts, so I used it for the body. This choice led me to select Rokkitt font for
+        the level one and level two headings; I was inspired to choose Rokkitt by a Figma article that displayed
+        the best fonts that work well with Roboto. <br>
+        These are the resources that have helped me make the best font family choices for my website: </p>
+      <div>
+        <ul>
+          <!-- List item 1 -->
+          <li> <a href="https://www.figma.com/google-fonts/roboto-font-pairings/" target="_blank"> https://www.figma.com/google-fonts/roboto-font-pairings/ </a> </li>
+          <li> <a href="https://www.freecodecamp.org/news/how-typography-determines-readability-serif-vs-sans-serif-and-how-to-combine-fonts-629a51ad8cce/"
+                target="_blank"> https://www.freecodecamp.org/news/how-typography-determines-readability-serif-vs-sans-serif-and-how-to-combine-fonts-629a51ad8cce/ </a> </li>
+        </ul>
+      </div>
+      <br>
+    </div>
+  </div>
+</main>
+<!-- /.container --> 
+
+<script>
+	const portfolioLink = document.getElementById("navbarDropdown");
+	let isMenuOpen = false;
+	
+	portfolioLink.addEventListener("click", function() {
+		if (!isMenuOpen) {
+			this.innerHTML = '<i class="fa-solid fa-folder-open"></i> Portfolio'; // Change to new icon
+		} else {
+			this.innerHTML = '<i class="fa-solid fa-folder"></i> Portfolio'; // Change back to original icon
+		}
+		isMenuOpen = !isMenuOpen
+	});
+</script> 
+
+<!-- Bootstrap core JavaScript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

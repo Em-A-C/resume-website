@@ -1,0 +1,226 @@
+<!doctype html>
+
+<!-- Written by Emily Cannon; please give credit if you use -->
+
+<html lang="en" data-bs-theme="auto">
+<head>
+<script src="../assets/js/color-modes.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.122.0">
+<title>Web Design/Dev Projects</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<!-- Bootstrap core CSS -->
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="breadcrumbs.css" rel="stylesheet">
+
+<!-- My stylesheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+<!-- Font Awesome  for Icons --> 
+<script src="https://kit.fontawesome.com/f2ec774ed1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<main>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top border-bottom border-secondary">
+    <div class="container-fluid"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html"> <span class="logo-text"><img src="images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="Logo of a letter 'e' with integrated circuit patterns on a teal background."> EC</span> </a> 
+      
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navigation Links on the right side -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="about.html"><i class="fa-solid fa-compass"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-folder"></i> Portfolio </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item "><a class="dropdown-item text-dark font-weight-bold nav-link" href="web_projects.html"><i class="fa-solid fa-code"></i> Web Design Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="design_projects.html"><i class="fa-solid fa-palette"></i> Graphic Design
+                Project</a></li>
+              <hr class="dropdown-divider text-dark font-weight-bold">
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="media.html"><i class="fa-solid fa-photo-film"></i> Media: Example Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="proposal.html"><i class="fa-solid fa-file-lines"></i> Original Website
+                Proposal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- BREADCRUMB -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="house-door-fill" viewBox="0 0 16 16">
+      <path
+          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+    </symbol>
+  </svg>
+  <div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+        <li class="breadcrumb-item"> <a class="link-body-emphasis" href="index.html">
+          <svg class="bi" width="16" height="16">
+            <use xlink:href="#house-door-fill"></use>
+          </svg>
+          <span class="visually-hidden">Home</span> </a> </li>
+        <li class="breadcrumb-item link-body-emphasis fw-semibold text-decoration-none"> Portfolio </li>
+        <li class="breadcrumb-item active" aria-current="page"> Web Design Projects </li>
+      </ol>
+    </nav>
+  </div>
+  <section class="text-center container border-bottom border-secondary">
+    <div class="col-md-8 mx-auto web-container">
+      <h1 class="web-project-title fw-light d-flex justify-content-evenly"><strong>Web Design &amp; <br>Dev Projects</strong></h1>
+      <p class="lead text-body d-flex justify-content-evenly"> Welcome to a cozy corner of the internet where I dabble in creating simple yet charming websites. Take a peek at my collection of projects that are as straightforward as they are delightful. From clean layouts to easy navigation, each site is designed with a touch of warmth and a sprinkle of creativity. Join me on this casual stroll through my web design and development journey, where the focus is on keeping things uncomplicated and inviting. Let's explore the beauty of simplicity in the digital world together! </p>
+      <em style="font-size:10px">^ The above paragraph was written by AI ^</em> </div>
+  </section>
+  <section class="toggle-container">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+          <div class="card web-card">
+            <h5 class="card-title">My First Website</h5>
+            <img src="images/web_design_imgs/first_website.jpg" alt="Screenshot of a webpage about 'All Things Gunnison' with a hero image of the view of the black canyon in the gunnison national park under a partly cloudy sky." class="card-img">
+            <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+              <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton1"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+              <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> During my high school years, I took web design classes and created my very first website. The website contains a collection of links to several pages and projects I designed and developed as a part of those classes. It is a very basic site with minimal styling, but it does showcase where I first found my passion for web design. <br><br>
+              <em>Link: <a href="https://gunnisongirl.neocities.org/Website" target="_blank">My First Website</a></em>
+			  <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+          <div class="card web-card">
+            <h5 class="card-title">Second Portfolio Website</h5>
+            <img src="images/web_design_imgs/portfolio2.png" alt="Screenshot of a webpage with a scenic autumn view featuring a winding road, golden aspen trees, a tranquil lake, and mountains, overlaid with the text 'Digital Portfolio.'" class="card-img">
+            <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+              <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton2"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+              <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> During high school, I wanted to practice web development skills, so I decided to create a second portfolio website in my spare time. My inspiration for this project came from my first portfolio website, which I developed during a summer immersion Girls Who Code program.<br>
+                <br>
+                <em>Link: <a href="https://f385a5ab-9b07-44cb-8816-9c518b64bb6d-00-vzz990g0xpzw.janeway.replit.dev/" target="_blank">Second Portfolio Website</a></em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+          <div class="card web-card">
+            <h5 class="card-title">Sew Caring Website</h5>
+            <img src="images/web_design_imgs/sew_caring.jpg" alt="Screenshot of a website landing page for 'Sew Caring,' a business creating personalized face masks, featuring a graphic of a sewing machine on a desk." class="card-img">
+            <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+              <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton3"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+              <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> In 2020, I took it upon myself to create a website for my grandmother, who was selling homemade masks. Although I worked on the website during my free time, it was never shared with anyone else. As I had no prior experience in website development, this project required a lot of self-learning and experimentation to get it right. Despite the challenges, I was determined to create a platform that would showcase my grandmother's work.<br>
+                <br>
+                <em>Link: <a href="https://gunnisongirl.neocities.org/Sew%20Caring%20Website%20/SewCaring" target="_blank">Sew Caring Website</a></em></div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+            <div class="card web-card">
+              <h5 class="card-title">Sweet Scroll Website w/ Raspberry Pi</h5>
+              <img src="images/web_design_imgs/sweet_scroll.jpg" alt="Screenshot of a webpage with a close-up of chocolate chip cookies with text overlay 'best chocolate chip cookies ever' on a purple background, with a list of equipment needed below." class="card-img">
+              <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+                <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton4"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+                <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> This is a website I created on my own using guidance from <a href="https://projects.raspberrypi.org/en/projects/sweet-scroll" target="_blank">Raspberry Pi</a>, a website that teaches various coding languages through entertaining projects.<br>
+                  <br>
+                  <em>Link: <a href="https://gunnisongirl.neocities.org/Sweet%20Scroll%20Project/SweetScroll" target="_blank">Sweet Scroll Website w/ Raspberry Pi</a></em></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+            <div class="card web-card">
+              <h5 class="card-title">Personality Quiz Website</h5>
+              <img src="images/web_design_imgs/personality_quiz.jpg" alt="Screenshot of a collage webpage showing various options for a personality quiz; includes images related to seasons, colors, and preferred drinks." class="card-img">
+              <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+                <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton5"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+                <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> In high school, I participated in a few summer programs with Girls Who Code, as I mentioned before. During one of those programs, I created a website that features a personality quiz. The quiz determines which season you are based on your preferred color, drink, book, and activity. Note: this website is buggy because it hasnt been maintained or updated in quite a few years so I believe the buttons do not work anymore.<br>
+                  <br>
+                  <em>Link: <a href="https://44dd17c3-da57-4cfb-97f4-de9195416d9d-00-3th4jpslb6wo3.worf.replit.dev/" target="_blank">Personality Quiz Website</a></em></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-items-stretch justify-content-end">
+            <div class="card web-card">
+              <h5 class="card-title">Computer Science Flashcard Website</h5>
+              <img src="images/web_design_imgs/computer_sci_flashcards.png" alt="Screenshot of a digital flashcard interface titled 'computer science flashcards' with terms listed including character encoding, hash, metadata, sgml, tls, search algorithm, and dtd." class="card-img">
+              <div class="card-body toggle-button d-flex align-items-end justify-content-center">
+                <button class="btn btn btn-custom toggle-description dropdown-toggle" type="button" id="dropdownMenuButton6"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Description </button>
+                <div class="card-description dropdown-menu" aria-labelledby="dropdownMenuButton1"> This website is one I created during one of my highschool classes. It is pretty basic, but it was one of many websites that have helped me improve my skills.<br>
+                  <br>
+                  <em>Link: <a href="https://721b8875-3297-4387-a523-a313b6a7ddde-00-efe6a09sj1i0.janeway.replit.dev/" target="_blank">Computer Science Flashcard Website</a></em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  
+  <!-- For toggle button --> 
+  <script>
+      $(document).ready(function () {
+        $('.toggle-description').click(function () {
+          $(this).siblings('.card-description').slideToggle();
+        });
+      });
+    </script> 
+  
+  <!-- To close toggle button --> 
+  <script>
+	document.getElementById('closeDropdownBtn').addEventListener('click', function() {
+	  document.querySelector('.dropdown-menu').classList.remove('show');
+	});
+  </script> 
+
+  <!-- For navbar, portfolio icon -->
+  <script>
+	const portfolioLink = document.getElementById("navbarDropdown");
+	let isMenuOpen = false;
+	
+	portfolioLink.addEventListener("click", function() {
+		if (!isMenuOpen) {
+			this.innerHTML = '<i class="fa-solid fa-folder-open"></i> Portfolio'; // Change to new icon
+		} else {
+			this.innerHTML = '<i class="fa-solid fa-folder"></i> Portfolio'; // Change back to original icon
+		}
+		isMenuOpen = !isMenuOpen
+	});
+</script> 
+  
+  <!-- Bootstrap core JavaScript
+================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> 
+</main>
+</body>
+</html>

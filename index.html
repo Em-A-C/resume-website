@@ -1,0 +1,141 @@
+<!doctype html>
+
+<!-- Written by Emily Cannon; please give credit if you use -->
+
+<html lang="en" data-bs-theme="auto">
+<head>
+<script src="../assets/js/color-modes.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.122.0">
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<!-- Bootstrap core CSS -->
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- My stylesheet -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+<!-- Font Awesome  for Icons --> 
+<script src="https://kit.fontawesome.com/f2ec774ed1.js" crossorigin="anonymous"></script>
+<style>
+/* Has to be here because it wouldnt work in my style sheet */
+.index-body {
+	background-image: url('images/index_background.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Small & Medium Screen */
+@media screen and (max-width: 1200px) {
+.index-body {
+	background-image: url('images/index_background_small.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+}
+</style>
+</head>
+
+<body class="index-body">
+<main>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top border-bottom border-secondary">
+    <div class="container-fluid"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-text"><img src="images/logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="Logo of a letter 'e' with integrated circuit patterns on a teal background."> EC</span>
+      </a>
+		
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navigation Links on the right side -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="about.html"><i class="fa-solid fa-compass"></i> About</a></li>
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle text-dark font-weight-bold" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-folder"></i> Portfolio </button>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item "><a class="dropdown-item text-dark font-weight-bold nav-link" href="web_projects.html"><i class="fa-solid fa-code"></i> Web Design Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="design_projects.html"><i class="fa-solid fa-palette"></i> Graphic Design
+                Project</a></li>
+              <hr class="dropdown-divider text-dark font-weight-bold">
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="media.html"><i class="fa-solid fa-photo-film"></i> Media: Example Project</a> </li>
+              <li class="nav-item"><a class="dropdown-item text-dark font-weight-bold nav-link" href="proposal.html"><i class="fa-solid fa-file-lines"></i> Original Website
+                Proposal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link text-dark font-weight-bold" href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	
+  <div class="container index-container">
+    <h1 class="index-header">Emily Cannon</h1>
+    <div class="intro starter-template border-top border-secondary">
+      <p class="index-p"> Hello, and welcome to my resume website!
+        My name is Emily, but you can call me Em, and I am thrilled you have stopped by to learn a little bit
+        about me. I am currently pursuing a career in web design and development, and I have a passion for
+        programming,
+        graphic design, and learning about artificial intelligence. On this website, you will discover my resume
+        and portfolio, as well as my experiences, insights, and knowledge on all things web design, web development,
+        graphic
+        design, and programming. Join me as I explore the endless possibilities at the intersection of creativity and
+        technology. <br>
+        Thank you for visiting! </p>
+      
+      <!-- LinkedIn Button -->
+      <div class="p-2 flex-fill d-flex justify-content-center border-bottom border-secondary"> 
+        <!-- Main Div for LinkedIn Button -->
+        <div class="general-button"> <a href="https://www.linkedin.com/in/emily-cannon-88ab05244" target="_blank">
+          <button class="btn btn-custom"><i class="fa-brands fa-linkedin"></i> : My Resume</button>
+          </a> </div>
+      </div>
+      <!-- End of Main Div for LinkedIn Button --> 
+    </div>
+  </div>
+</main>
+<!-- /.container --> 
+
+<script>
+	const portfolioLink = document.getElementById("navbarDropdown");
+	let isMenuOpen = false;
+	
+	portfolioLink.addEventListener("click", function() {
+		if (!isMenuOpen) {
+			this.innerHTML = '<i class="fa-solid fa-folder-open"></i> Portfolio'; // Change to new icon
+		} else {
+			this.innerHTML = '<i class="fa-solid fa-folder"></i> Portfolio'; // Change back to original icon
+		}
+		isMenuOpen = !isMenuOpen
+	});
+</script> 
+
+<!-- Bootstrap core JavaScript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

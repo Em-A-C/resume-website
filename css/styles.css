@@ -1,0 +1,780 @@
+/* Written by Emily Cannon; please give credit if you use */
+/* ------------------------------ GENERAL STYLING ------------------------------ */
+h1 {
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 140px;
+  margin: 0 0 0 32.5px;
+  text-align: center
+}
+h2 {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 10px;
+}
+p {
+  line-height: 2;
+  margin: 0 auto;
+  padding: 10px;
+}
+li {
+  line-height: 1.6;
+  font-size: 18px;
+}
+/* Medium Screen */
+@media screen and (min-width: 630px) and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    margin: auto 0;
+    padding: 8px;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: auto 0;
+    padding: 8px;
+  }
+  p {
+    font-size: 18px;
+    margin: auto 0;
+    padding: 8px;
+  }
+  li {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}
+/* Small Screen */
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 2.5rem;
+    margin: auto 0;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: auto 0;
+    padding: 5px;
+  }
+  p {
+    font-size: 12px;
+    margin: auto 0;
+    padding: 5px;
+  }
+  li {
+    line-height: 1.4;
+    font-size: 12px;
+  }
+}
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 1.3rem;
+  padding-top: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.starter-template {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.btn-custom {
+  background-color: #008080;
+  color: #E0FFFF;
+  border-color: #E0FFFF;
+  border-width: 5px;
+}
+.btn-custom:hover {
+  background-color: #E0FFFF;
+  color: #008080;
+  border-color: #008080;
+}
+/* ------------------------------  NAV BAR ------------------------------ */
+.navbar {
+  background-color: #E0FFFF;
+}
+.navbar-brand {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 10px;
+}
+.nav-link:hover {
+  text-decoration: underline overline #008080;
+}
+/* Bootstrap Styling */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.bd-mode-toggle {
+  z-index: 1500;
+}
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+/* ------------------------------  BREADCRUMBS ------------------------------ */
+.breadcrumb-chevron {
+  --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236c757d'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  gap: .5rem;
+}
+.breadcrumb-chevron .breadcrumb-item {
+  display: flex;
+  gap: inherit;
+  align-items: center;
+  padding-left: 0;
+  line-height: 1;
+}
+.breadcrumb-chevron .breadcrumb-item::before {
+  gap: inherit;
+  float: none;
+  width: 1rem;
+  height: 1rem;
+}
+.breadcrumb-custom .breadcrumb-item {
+  position: relative;
+  flex-grow: 1;
+  padding: .75rem 3rem;
+}
+.breadcrumb-custom .breadcrumb-item::before {
+  display: none;
+}
+.breadcrumb-custom .breadcrumb-item::after {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  z-index: 1;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  content: "";
+  background-color: var(--bs-tertiary-bg);
+  border-top-right-radius: .5rem;
+  box-shadow: 1px -1px var(--bs-border-color);
+  transform: scale(.707) rotate(45deg);
+}
+.breadcrumb-custom .breadcrumb-item:first-child {
+  padding-left: 1.5rem;
+}
+.breadcrumb-custom .breadcrumb-item:last-child {
+  padding-right: 1.5rem;
+}
+.breadcrumb-custom .breadcrumb-item:last-child::after {
+  display: none;
+}
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+/* ------------------------------ INDEX.HTML ------------------------------ */
+h1.index-header {
+  padding-top: 5px;
+}
+p.index-p {
+  margin: auto 0;
+  padding-bottom: 25px;
+}
+.index-container {
+  max-width: 800px;
+  min-width: 100px;
+  max-height: 100px;
+  text-align: center;
+}
+/* ------------------------------ ABOUT.HTML ------------------------------ */
+.about-container {
+  margin: auto 0;
+  padding: 60px;
+}
+.bio {
+  border-bottom: 3px dotted black;
+}
+/* Centers the level two heading for this page only */
+h2.skills-heading2 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 1px;
+}
+/* Font styling for the level three headings for this page only */
+h3.skills-heading3 {
+  font-family: "Rokkitt", serif;
+  font-weight: 580;
+  font-style: italic;
+  margin-top: 0;
+  text-align: center;
+}
+/* Figure section for the images: creates a limit to the maximum width of the elements in the section to keep sizing consistent and adds some padding around imgages to make each fig section look more balanced */
+.skills-figure {
+  max-width: 100%;
+  padding: 20px;
+}
+/* Sets a limit to the maximum width to all the images for each article of the section to keep sizing consistent */
+.skills-imgs {
+  max-width: 100%;
+}
+/* figcaption w/ a citation for each image: makes the font size smaller so it doesnt distract from the main content */
+.skills-figcap {
+  font-size: .6rem;
+}
+/* grid container: the parent element of article.skills-card */
+section.skills-container {
+  display: grid;
+  margin: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+}
+/* grid items: the children of the parent element section.skills-container */
+.skills-card {
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 .5rem 1rem rgb(0 0 0 / .1);
+}
+/* ------- Media Queries for about.html ------- */
+/* Wide Screen - Creates a 2 row by 3 column grid */
+@media screen and (min-width: 1201px) {
+  section.skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+  }
+  .skills-card {
+    background-color: #F0FFFF;
+    /* Azure */
+    border: 2px solid #87CEEB;
+    /* SkyBlue */
+    max-width: 100%;
+  }
+  h3.skills-heading3 {
+    font-size: 1.8rem;
+  }
+  .skills-content {
+    font-size: 1.2rem;
+  }
+}
+/* Medium Screen - for screens that are outside of my min-width: 1000px breakpoint and my max-width: 600px breakpoint*/
+/* Creates a 3 row by 2 column grid */
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  section.skills-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 1.5rem;
+  }
+  .skills-card {
+    background-color: #FFFFF0;
+    /* Ivory */
+    border: 2px solid #FFD700;
+    /* Gold */
+    max-width: 95%;
+  }
+  h3.skills-heading3 {
+    font-size: 1.5rem;
+  }
+  .skills-content {
+    font-size: 1rem;
+  }
+}
+/* Small Screen - Creates a 6 row by 1 column grid */
+@media screen and (max-width: 700px) {
+  section.skills-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 1rem;
+  }
+  .skills-card {
+    background-color: #F0FFF0;
+    /* HoneyDew */
+    border: 2px solid #66CDAA;
+    /* MediumAquamarine */
+    max-width: 90%;
+  }
+  h3.skills-heading3 {
+    font-size: 1rem;
+  }
+  .skills-content {
+    font-size: 0.8rem;
+  }
+}
+/* ------------------------------ CONTACT.HTML ------------------------------ */
+/* Level 1 heading ("Contact Me") for contact page */
+h1.heading-contact {
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+/* Styles the "Contact Me" form ONLY, NOT the LinkedIn or Survey section */
+.contact-form {
+  margin: 0 auto;
+  padding: 60px;
+  width: 700px;
+}
+/* For all level 2 heading on contact.html page */
+h2.heading2 {
+  text-align: center;
+}
+/* Styles the paragraph explaing what the red asterick is for on the form */
+p.required {
+  font-size: 14px;
+}
+/* Styles all labels for input fields in form */
+.form-label {
+  padding-right: 23px;
+  font-size: 18px;
+}
+/* Styles "Email Username" label for email username input field */
+.input-grid-label {
+  font-size: 16px;
+}
+/* Styles label for email domain dropdown menu */
+.dropdown-email {
+  font-size: 15px;
+}
+/* Styling for the "Agree to terms and conditions" next to checkbox */
+.terms-conditions {
+  font-size: 15px;
+}
+/* Styles the LinkedIn and Survey section, ONLY */
+.linkedin-form {
+  margin: 0 auto;
+  padding: 60px;
+  width: 600px;
+}
+/* "My LinkedIn" button */
+.general-button {
+  margin-bottom: 20px;
+}
+/* Specific styling for the level 2 heading, "Quick Survey" */
+.survey-heading {
+  font-size: 25px;
+  padding-top: 20px;
+  text-align: center;
+}
+/* Styles the two pargraph elements in my survey section */
+.survery-question {
+  font-size: 15px;
+  padding: .375rem .75rem;
+}
+/* Padding for radio button container */
+.review-answers {
+  padding: .375rem .75rem;
+}
+/* Styles the 'Yes' and 'No' radio buttons */
+.survey-answer {
+  font-size: 15px;
+}
+/* Padding for review container */
+.review-section {
+  padding-top: 20px;
+}
+/* Styles the label "Review" */
+.survey-review {
+  font-size: 15px;
+  padding-left: 8px;
+}
+/*"Submit Review" button */
+.submit-button2 {
+  padding-top: 10px;
+  padding-right: 30px;
+}
+/* Styles for the two textareas in my code for contact.html */
+textarea {
+  max-height: 500px;
+}
+.textarea-label {
+  padding: 5px;
+  margin: auto 0;
+  font-size: 18px;
+}
+/* Styles input/select fields according to whether they are set to 'required' or 'optional' */
+input:required {
+  border: 1px solid black;
+}
+input:optional {
+  border: 1px solid silver;
+}
+select:required {
+  border: 1px solid black;
+}
+/* No media queries because of using Bootrap Styles */
+/* ------------------------------ PORTFOLIO ------------------------------ */
+/* ------------- WEB_PROJECTS.HTML ------------- */
+.web-container {
+  margin: auto 0;
+  padding-bottom: 25px;
+}
+.web-project-title {
+  text-align: center;
+  line-height: 80px;
+  margin: 0 0 0 32.5px;
+}
+/* Small Screen */
+@media screen and (max-width: 630px) {
+  web-project-title {
+	  line-height: 30px;
+	}
+}
+.toggle-container {
+  margin: 0 auto;
+  padding: 30px;
+}
+h5.card-title {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center
+}
+.col-md-4 {
+  padding: 30px;
+  margin: auto 0;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.web-card {
+  padding: 25px;
+  margin: auto 0;
+  width: 500px;
+  height: 400px;
+}
+.card-img {
+  width: 100%;
+}
+.card-description {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  padding: 25px;
+  margin: auto 0;
+  text-align: center;
+}
+.dropdown:hover .card-description {
+  display: block;
+}
+/* ------------- DESIGN_PROJECTS.HTML ------------- */
+.design-container {
+  margin: auto 0;
+  padding-bottom: 25px;
+}
+.design-projects-header {
+  white-space: nowrap;
+  text-align: center;
+}
+.flip-container {
+  margin: auto 0;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  text-align: center;
+}
+
+/* Flip card set 1 */
+.themed-grid-col1 {
+  margin: auto 0;
+  padding: 2px;
+}
+.flip-card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  perspective: 1000px;
+  padding: 2px;
+  width: 700px;
+  height: 500px;
+  margin: auto 0;
+}
+.flip-card1:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 1030px) {
+	.flip-card1 {
+		width: 400px;
+		height: 500px;
+	}
+}
+
+/* Flip card set 2 */
+.themed-grid-col2 {
+  margin: auto 0;
+  padding: 2px;
+}
+.flip-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  perspective: 1000px;
+  padding: 2px;
+  width: 700px;
+  height: 500px;
+  margin: auto 0;
+}
+.flip-card2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 1030px) {
+	.flip-card2 {
+		width: 400px;
+		height: 500px;
+	}
+}
+
+/* Flip card set 3 */
+.themed-grid-col3 {
+  margin: auto 0;
+  padding: 40px;
+}
+.flip-card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  perspective: 1000px;
+  padding: 40px;
+  width: 700px;
+  height: 450px;
+  margin: auto 0;
+}
+.flip-card3:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 1030px) {
+	.flip-card3 {
+		width: 400px;
+		height: 500px;
+	}
+}
+
+/* Flip card set 4 */
+.themed-grid-col4 {
+  margin: auto 0;
+  padding: 15px;
+}
+.flip-card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  perspective: 1000px;
+  padding: 45px;
+  width: 700px;
+  height: 450px;
+  margin: auto 0;
+}
+.flip-card4:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 1030px) {
+	.flip-card4 {
+		width: 400px;
+		height: 500px;
+	}
+}
+
+/* Flip card set 5 */
+.themed-grid-col5 {
+  margin: auto 0;
+  padding: 15px;
+}
+.flip-card5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  perspective: 1000px;
+  padding: 25px;
+  width: 400px;
+  height: 500px;
+  margin: auto 0;
+}
+.flip-card5:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 1030px) {
+  .themed-grid-col5 {
+    margin: auto 0;
+    padding: 15px;
+  }
+  .flip-card5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: stretch;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    perspective: 1000px;
+    padding: 80px;
+    width: 400px;
+    height: 600px;
+    margin: auto 0;
+  }
+}
+
+/* Flip card general styling */
+.flip-card-inner {
+  width: 85%;
+  height: 85%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: #000;
+}
+.flip-card-back {
+  position: absolute;
+  color: #000;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+}
+.card-img-top {
+  max-height: 500px;
+}
+h5.card-title {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center
+}
+p.hover {
+  font-size: 10px;
+  text-align: center;
+}
+p.card-text {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: stretch;
+  text-align: center;
+  font-size: 11px;
+}
+/* ------------- MEDIA.HTML ------------- */
+/* main section and video styling */
+.main-media {
+  background: #EFD671;
+}
+.seasonal-info {
+  clear: left;
+  padding: 40px 0;
+  background: #9EDAEB;
+  box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5), inset 0 -3px 2px rgba(0, 0, 0, 0.5);
+}
+.clearfix {
+  clear: both;
+}
